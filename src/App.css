@@ -1,0 +1,121 @@
+/* src/App.css */
+:root {
+  --color-cream: #f8f5f0;
+  --color-black: #1a1a1a;
+  --color-gold: #d4af37;
+  --color-dark-gold: #b8941f;
+  --color-light-gray: #e8e8e8;
+  --color-dark-gray: #2d2d2d;
+  --color-text: #333;
+  --color-text-light: #666;
+  
+  --font-serif: 'Poppins', 'Times New Roman', serif;
+  --font-sans: 'Helvetica Neue', Arial, sans-serif;
+  
+  --border-radius: 8px;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.12);
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  background-color: var(--color-cream);
+  line-height: 1.6;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding: 0 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+/* Buttons */
+.btn {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: var(--border-radius);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: var(--transition);
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-primary {
+  background: var(--color-gold);
+  color: var(--color-black);
+}
+
+.btn-primary:hover {
+  background: var(--color-dark-gold);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-black);
+  border: 1px solid var(--color-black);
+}
+
+.btn-secondary:hover {
+  background: var(--color-black);
+  color: var(--color-cream);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 0 1rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,48 @@
+/* src/components/TrendingSection/TrendingSection.css */
+.trending-section {
+  padding: 4rem 0 2rem;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  color: var(--color-black);
+  margin-bottom: 1rem;
+}
+
+.section-header p {
+  font-size: 1.1rem;
+  color: var(--color-text-light);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.trending-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .trending-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .trending-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .trending-section {
+    padding: 2rem 0;
+  }
+  
+  .section-header h2 {
+    font-size: 2rem;
+  }
+}

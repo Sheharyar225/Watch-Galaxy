@@ -1,0 +1,54 @@
+/* src/components/CategoryFilter/CategoryFilter.css */
+.category-filter {
+  padding: 3rem 0 1rem;
+  border-bottom: 1px solid var(--color-light-gray);
+  margin-bottom: 2rem;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.filter-btn {
+  padding: 0.8rem 1.5rem;
+  border: 1px solid var(--color-light-gray);
+  background: transparent;
+  color: var(--color-text-light);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: var(--transition);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.filter-btn:hover {
+  border-color: var(--color-gold);
+  color: var(--color-gold);
+  transform: translateY(-1px);
+}
+
+.filter-btn.active {
+  background: var(--color-gold);
+  border-color: var(--color-gold);
+  color: var(--color-black);
+}
+
+@media (max-width: 768px) {
+  .category-filter {
+    padding: 2rem 0 1rem;
+  }
+  
+  .filter-container {
+    gap: 0.5rem;
+  }
+  
+  .filter-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.8rem;
+  }
+}
